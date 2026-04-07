@@ -1,10 +1,10 @@
-# 🚀 Capability Router: The "Meta-Router" Seed
+# 🚀 Capability Router
 
 [![Agentic Engineering](https://img.shields.io/badge/Paradigm-Agentic_Engineering-blue.svg)](#)
 [![Zero Config](https://img.shields.io/badge/Setup-Zero_Config-success.svg)](#)
 [![Cross Platform](https://img.shields.io/badge/Platform-Claude_Code_|_Gemini_CLI_|_Cursor-lightgrey.svg)](#)
 
-**Capability Router** is a high-precision strategic orchestrator for AI Agents. It doesn't just search your local `.md` files; it dynamically selects the **"Most Professional Expert" (Role)** and equips them with the **"Handiest Weapons" (Skills)** based on the Software Engineering Lifecycle.
+**Capability Router** is a high-precision strategic orchestrator for AI Agents. It dynamically selects the **"Most Professional Expert" (Role)** and equips them with the **"Handiest Weapons" (Skills)** based on the Software Engineering Lifecycle.
 
 ---
 
