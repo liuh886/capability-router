@@ -19,9 +19,7 @@ Traditional agent tools are either hardcoded or rely on simple keyword searches.
 
 ## 👥 Who should use it?
 
-- **GStack Users:** It perfectly understands the GStack methodology (`gstack-ceo`, `gstack-architect`, etc.) and naturally bridges them together across phases.
-- **Agency-Agents Users:** If you have downloaded an entire "agency" of expert roles, this router will act as your Chief of Staff, dynamically dispatching the right expert.
-- **Skill Hoarders:** If you've installed too many skills/tools and are worried your Agent is getting confused or hitting context limits, this router shields your Agent by only presenting the 3 most relevant tools for the current expert.
+Perfect for users of **gstack**, **agency-agents**, or "skill hoarders" who want to prevent context limits by dynamically dispatching only the right expert and their 3 most relevant tools.
 
 ## 🧬 The "Seed" Concept (Why no `pip install`?)
 
