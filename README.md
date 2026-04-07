@@ -17,6 +17,12 @@ Traditional agent tools are either hardcoded or rely on simple keyword searches.
 3. **Stage B (Find the Weapons):** Once the expert is chosen, it filters and scores the best tools (skills) that synergize with that specific expert.
 4. **Self-Awareness:** It outputs a `rationale` explaining *why* it made the pairing, allowing transparent agentic chaining.
 
+## 👥 Who should use it?
+
+- **GStack Users:** It perfectly understands the GStack methodology (`gstack-ceo`, `gstack-architect`, etc.) and naturally bridges them together across phases.
+- **Agency-Agents Users:** If you have downloaded an entire "agency" of expert roles, this router will act as your Chief of Staff, dynamically dispatching the right expert.
+- **Skill Hoarders:** If you've installed too many skills/tools and are worried your Agent is getting confused or hitting context limits, this router shields your Agent by only presenting the 3 most relevant tools for the current expert.
+
 ## 🧬 The "Seed" Concept (Why no `pip install`?)
 
 We are entering the era of **Agentic Engineering**. You shouldn't have to manually configure Python environments, deal with OS-specific pathing (`\` vs `/`), or write platform-specific wrappers (MCP vs SKILL.md).
