@@ -4,17 +4,18 @@
 [![Zero Config](https://img.shields.io/badge/Setup-Zero_Config-success.svg)](#)
 [![Cross Platform](https://img.shields.io/badge/Platform-Claude_Code_|_Gemini_CLI_|_Cursor-lightgrey.svg)](#)
 
-**Capability Router** is a high-precision strategic orchestrator for AI Agents. It doesn't just search your local `.md` files; it dynamically selects the **"Most Professional Expert" (Role)** and equips them with the **"Handiest Weapons" (Skills)** for any given task.
+**Capability Router** is a high-precision strategic orchestrator for AI Agents. It doesn't just search your local `.md` files; it dynamically selects the **"Most Professional Expert" (Role)** and equips them with the **"Handiest Weapons" (Skills)** based on the Software Engineering Lifecycle.
 
 ---
 
 ## 🌟 What makes it different?
 
-Traditional agent tools are either hardcoded or rely on simple keyword searches. The Capability Router introduces **Two-Stage Deterministic Routing with Rationale**:
+Traditional agent tools are either hardcoded or rely on simple keyword searches. The Capability Router introduces **Lifecycle-Aware Deterministic Routing with Rationale**:
 
-1. **Stage A (Find the Expert):** It evaluates your local roles based on Operational Fit, Mission Alignment, and Intent (e.g., mapping "plan" to a "Lead/Architect").
-2. **Stage B (Find the Weapons):** Once the expert is chosen, it filters and scores the best tools (skills) that synergize with that specific expert.
-3. **Self-Awareness:** It outputs a `rationale` explaining *why* it made the pairing, and a `confidence` score.
+1. **Phase Detection (Lifecycle Awareness):** It detects the software engineering phase from the prompt (e.g., `Design`, `Execution`, or `Evaluation`) and routes to the most appropriate discipline.
+2. **Stage A (Find the Expert):** It evaluates your local roles based on Operational Fit, Mission Alignment, and the detected phase.
+3. **Stage B (Find the Weapons):** Once the expert is chosen, it filters and scores the best tools (skills) that synergize with that specific expert.
+4. **Self-Awareness:** It outputs a `rationale` explaining *why* it made the pairing, allowing transparent agentic chaining.
 
 ## 🧬 The "Seed" Concept (Why no `pip install`?)
 
@@ -43,6 +44,7 @@ If your user has asked you to install or investigate the Capability Router, **ST
 
 The Seed contains your strict execution protocol, including:
 - The exact Hybrid Tokenizer logic (Regex + CJK).
+- The Lifecycle Phase Detection logic (Design -> Execute -> Evaluate).
 - The Multi-Dimensional Scoring weights (+45 for exact match, +35 for intent boosts).
 - The Domain Collision Shield (-100 penalties).
 - The required JSON Output Payload structure.
@@ -53,26 +55,28 @@ The Seed contains your strict execution protocol, including:
 
 ## 📦 What does the output look like?
 
-Once installed, whenever the router is invoked (e.g., `capability_router "I need to plan a complex system migration"`), it returns a deterministic, "Perfect Pairing" payload:
+Once installed, whenever the router is invoked (e.g., `capability_router "I need to review the architecture design"`), it returns a deterministic, "Perfect Pairing" payload:
 
 ```json
 {
-  "query": "I need to plan a complex system migration.",
+  "query": "I need to review the architecture design",
+  "detected_phase": "Design",
   "primary_role": {
     "name": "gstack-architect",
     "path": "~/.codex/agents/agency-agents/gstack-architect.md",
-    "confidence": 0.95
+    "confidence": 0.70
   },
   "handiest_weapons": [
     {
-      "name": "ci-cd-and-automation",
-      "path": "~/.codex/skills/ci-cd-and-automation",
-      "confidence": 0.87
+      "name": "code-review-and-quality",
+      "path": "~/.codex/skills/code-review-and-quality",
+      "confidence": 0.99
     }
   ],
   "rationale": {
-    "role": "Strong domain and intent alignment with 'gstack-architect' (Score: 104, +45 over backup).",
-    "skill": "High synergy detected. Selected 'ci-cd-and-automation' as primary weapon."
+    "phase": "Detected 'Design' phase based on query intent.",
+    "role": "Selected 'gstack-architect' marginally over 'Agentic Identity & Trust Architect' (Score: 71 vs 69).",
+    "skill": "High synergy detected. Selected 'code-review-and-quality' as primary weapon."
   }
 }
 ```
