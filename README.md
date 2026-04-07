@@ -31,10 +31,11 @@ The Seed is a highly optimized prompt. **You give the Seed to your AI Agent, and
 
 It takes 10 seconds and 1 prompt.
 
-1. **Download the Seed:** Download the `capability-router-seed.md` file from this repository to your local machine.
-2. **Tell your Agent to plant it:** Open your terminal (Claude Code, Gemini CLI, or Cursor) and simply type:
-   > *"Read `capability-router-seed.md` and follow its instructions exactly to upgrade yourself."*
-3. **Grab a coffee:** Watch as your Agent writes the Python engine, creates the tool wrappers, indexes your local `~/.gemini`, `~/.codex`, or `~/.claudecode` folders, and runs a verification test.
+1. **Copy the URL:** Get the link to the raw seed file:
+   `https://raw.githubusercontent.com/liuh886/capability-router/main/capability-router-seed.md`
+2. **Tell your Agent to plant it:** Open your terminal (Claude Code, Gemini CLI, or Cursor) and simply paste this prompt:
+   > *"Read this file and follow its instructions exactly to upgrade yourself: https://raw.githubusercontent.com/liuh886/capability-router/main/capability-router-seed.md"*
+3. **Grab a coffee:** Watch as your Agent fetches the seed, writes the Python engine, creates the tool wrappers, indexes your local agent folders, and runs a verification test.
 
 ---
 
